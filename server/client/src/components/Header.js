@@ -9,7 +9,10 @@ class Header extends Component{
                 return '';
             case false:
                 return (
-                  <li><a href="/auth/google">Login With Google</a></li>
+                    <div>
+                    <li><a href="/auth/google">Login With Google</a></li>
+                    <li><a href="/singupform">Register </a></li>
+                    </div>
                 );
             default:
                return <li><a href="/api/logout">Logout</a></li>
@@ -26,6 +29,7 @@ class Header extends Component{
                     >
                         Klikaj smialo
                     </Link>
+
                     <ul className="right">
                         {this.renderContent()}
                     </ul>
