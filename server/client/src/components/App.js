@@ -22,12 +22,10 @@ class App extends Component {
                 <div className="container">
                     <Header/>
                     <Route exact path="/" component={Landing} />
+                    <Route exact path="/register" component={SingUpForm} />
+                    <Route exact path="/login" component={SingInForm} />
                     <Route exact path="/surveys" component={DashBoard} />
-                    <Route exact path="/header" component={Header} />
-                    <Route exact path="/surveynew" component={Survey} />
-                    <Route exact path="/singupform" component={SingUpForm} />
-                    <Route exact path="/singinform" component={SingInForm} />
-                    <Route exact path="/profile" component={Profile} />
+                     <Route exact path="/profile" component={Profile} />
                 </div>
             </BrowserRouter>
         </div>

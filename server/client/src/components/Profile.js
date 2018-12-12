@@ -10,7 +10,7 @@ class Profile extends Component{
         }
     }
     componentDidMount(){
-        const token = localStorage.usertoken
+        const token = localStorage.usertoken;
         const decoded = jwt_decode(token)
         this.setState({
             name: decoded.name,

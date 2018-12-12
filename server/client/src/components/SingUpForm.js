@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import {login, register} from './UserFunctions'
+import { register} from './UserFunctions'
 class SignUpForm extends Component {
     constructor() {
         super();
@@ -33,7 +33,8 @@ class SignUpForm extends Component {
 
         register(user).then(res => {
             if(res){
-                this.props.history.push(`/singinform`)
+                this.props.history.push(`/login`);
+                return res;
             }
         })
 
@@ -56,7 +57,7 @@ class SignUpForm extends Component {
                         <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
                     </div>
                     <div className="FormField">
-                        <button className="FormField__Button mr-20">Sign Up</button> <Link to="/singinform" className="FormField__Link">I'm already member</Link>
+                        <button className="FormField__Button mr-20">Sign Up</button> <Link to="/login" className="FormField__Link">I'm already member</Link>
                     </div>
                 </form>
             </div>
