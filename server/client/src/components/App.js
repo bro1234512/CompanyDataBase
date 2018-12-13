@@ -8,7 +8,7 @@ import Landing from './Landing';
 import SingInForm from './SingInForm';
 import Profile from './Profile';
 const DashBoard = () => <h2>DashBoard</h2>
-const Survey = () => <h2>Survey</h2>
+
 
 
 class App extends Component {

@@ -24,6 +24,7 @@ class Header extends Component{
                         </div>
                     );
                 }
+                break;
             default:
 
                return <div>
@@ -41,12 +42,12 @@ class Header extends Component{
 
         return(
             <nav>
-                <div className="nav-wrapper">
+                <div className=" blue nav-wrapper">
                     <Link
                         to={this.props.auth ? '/surveys' : '/'}
                         className="left brand-logo"
                     >
-                        Klikaj smialo
+                        Company Datebase
                     </Link>
 
                     <ul className="right">
