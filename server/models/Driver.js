@@ -9,13 +9,13 @@ const DriverSchema = new Schema({
         type: String
     },
     birthdayDate:{
-        type: String
+        type: Date
     },
     carLicenseTerm:{
         type: Date
     },
     password:{
-        type: Date
+        type: String
     },
     email:{
         type: String
