@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const  Schema = mongoose.Schema;
 
-const DriverSchema = new Schema({
+const CarSchema = new Schema({
     registrationNumber:{
         type: String
     },
@@ -22,4 +22,4 @@ const DriverSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('driver',DriverSchema);
+module.exports = mongoose.model('car',CarSchema);
