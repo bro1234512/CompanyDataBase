@@ -24,7 +24,7 @@ class App extends Component {
                     <Route exact path="/" component={Landing} />
                     <Route exact path="/register" component={SingUpForm} />
                     <Route exact path="/login" component={SingInForm} />
-                    <Route exact path="/surveys" component={DashBoard} />
+                    <Route exact path="/mailer" component={DashBoard} />
                      <Route exact path="/profile" component={Profile} />
                 </div>
             </BrowserRouter>

@@ -40,7 +40,7 @@ class Header extends Component{
             <nav>
                 <div className=" blue  nav-wrapper">
                     <Link
-                        to={this.props.auth ? '/surveys' : '/'}
+                        to={this.props.auth ? '/mailer' : '/'}
                         className="left brand-logo"
                     >
                         Company Datebase

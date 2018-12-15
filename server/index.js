@@ -6,6 +6,9 @@ const keys = require('./config/keys');
 var cors = require("cors")
 var bodyParser = require("body-parser")
 require('./models/User');
+require('./models/Mailer');
+require('./models/Car');
+require('./models/Driver');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI);
@@ -31,7 +34,7 @@ var Users = require('./routes/Users');
 
 app.use('/usersMongo', Users)
 require('./routes/authRoutes')(app);
-
+require('./routes/mailerRoutes')(app);
 
 if(process.env.NODE_ENV === 'production') {
     // express will serve up production assets
