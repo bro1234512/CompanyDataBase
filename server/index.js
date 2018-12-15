@@ -3,11 +3,12 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
-var cors = require("cors")
+var cors = require("cors");
 var bodyParser = require("body-parser");
-var morgan = require('morgan')
-
 require('./models/User');
+require('./models/Survey');
+require('./models/Car');
+require('./models/Driver');
 require('./services/passport');
 
 mongoose.connect(keys.mongoURI);
@@ -33,7 +34,25 @@ var Users = require('./routes/Users');
 var Cars = require('./routes/carRoutes');
 app.use('/car', Cars);
 app.use('/usersMongo', Users)
+
+app.use('/usersMongo', Users);
 require('./routes/authRoutes')(app);
+require('./routes/surveyRoutes')(app);
+
+if(process.env.NODE_ENV === 'production') {
+    // express will serve up production assets
+    // like our main.js file, or main.css file
+    app.use(express.static('client/build'));
+
+
+    // express will serve up the index.html file
+    // if it doesn't recognize the route
+
+    const path = require('path');
+    app.get('*',(req, res)=>{
+       res.sendFile((path.resolve(__dirname,'client', 'build', 'index.html')));
+    });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);

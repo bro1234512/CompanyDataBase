@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const {Schema}= mongoose;
 const RecipientSchema = require('./Reciptient');
 
-const mailerSchema= new Schema({
+const surveySchema= new Schema({
 
     title: {
         type: String
@@ -25,4 +25,4 @@ const mailerSchema= new Schema({
 
 });
 
-mongoose.model('mailer', mailerSchema);
+mongoose.model('surveys', surveySchema);
