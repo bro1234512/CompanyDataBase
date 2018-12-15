@@ -17,6 +17,7 @@ const DashBoard = () => <h2>DashBoard</h2>
 class App extends Component {
     componentDidMount(){
         this.props.fetchUser();
+        this.props.fetchCars();
     }
     render(){
     return(

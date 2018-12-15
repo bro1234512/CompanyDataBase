@@ -4,7 +4,9 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
 var cors = require("cors")
-var bodyParser = require("body-parser")
+var bodyParser = require("body-parser");
+var morgan = require('morgan')
+
 require('./models/User');
 require('./services/passport');
 
@@ -18,7 +20,7 @@ app.use(
         extended: false
     })
 );
-
+app.use(morgan('dev'));
 app.use(
     cookieSession({
         maxAge: 30 * 24 * 60 * 60 * 1000,

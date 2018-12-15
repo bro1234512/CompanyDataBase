@@ -27,6 +27,17 @@ export const addCar = newCar => {
             return res;
         })
 }
+
+export const showCars = () => {
+    return axios
+        .get('car/showCars', {
+
+        })
+        .then(res => {
+
+            return res.data;
+        })
+}
 export const login = user => {
     return axios
         .post('usersMongo/singin', {
