@@ -12,6 +12,21 @@ export const register = newUser => {
             return res;
         })
 }
+
+export const addCar = newCar => {
+    return axios
+        .post('car/addCarToDatabase', {
+            registrationNumber: newCar.registrationNumber,
+            mark: newCar.mark,
+            model: newCar.model,
+            ageGroup: newCar.ageGroup,
+            carReviewTerm: newCar.carReviewTerm
+        })
+        .then(res => {
+            console.log("car added")
+            return res;
+        })
+}
 export const login = user => {
     return axios
         .post('usersMongo/singin', {

@@ -17,7 +17,7 @@ const mailerSchema= new Schema({
         type: [RecipientSchema]
     },
     _user: {
-        type: Schema.Types.Object.ObjectId, ref: 'User'
+        type: Schema.Types.ObjectId, ref: 'User'
     },
     dateSent: {
         type: Date

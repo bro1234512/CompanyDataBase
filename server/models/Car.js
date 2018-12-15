@@ -16,10 +16,8 @@ const CarSchema = new Schema({
     },
     carReviewTerm:{
         type: Date
-    },
-    email:{
-        type: Date
     }
+
 });
 
 module.exports = mongoose.model('car',CarSchema);

@@ -1,7 +1,7 @@
 const requireLogin = require('../middlewares/requireLogin');
 
 module.exports = app =>{
-    app.post('/api/mailer',requireLogin(), (req, res)=>{
-
+    app.post('/api/mailer',requireLogin, (req, res)=>{
+    return res.data
     });
 };
