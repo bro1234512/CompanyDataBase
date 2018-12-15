@@ -23,3 +23,6 @@ export const login = user => {
             return res.data
         })
 }
+export const logChange = log => {
+    return localStorage.removeItem('usertoken');
+}

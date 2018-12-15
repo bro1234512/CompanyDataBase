@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link} from "react-router-dom";
-
+import {logChange} from './UserFunctions'
 class Header extends Component{
 
     renderContent(){
@@ -20,21 +20,17 @@ class Header extends Component{
                     return (
                         <div>
                             <li><a href="/auth/google">Login With Google</a></li>
-                            <li><a href="/register" onClick="return logChange();" >Register </a></li>
+                            <li><a href="/register"  >Register </a></li>
                         </div>
                     );
                 }
-                break;
+
             default:
 
                return <div>
-                   <script type="text/javascript">
-                       logChange(){
-                       localStorage.removeItem('usertoken')
-                   }
 
-                   </script>
-               <li><a href="/api/logout" onClick="return logChange();">Logout</a></li>
+               <li><a href="/api/logout" onClick={logChange}>Logout</a></li>
+
                </div>
         }
     }
