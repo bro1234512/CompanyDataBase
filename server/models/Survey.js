@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const {Schema}= mongoose;
 const RecipientSchema = require('./Reciptient');
 
-const mailerSchema= new Schema({
+const surveySchema= new Schema({
 
     title: {
         type: String
@@ -17,7 +17,7 @@ const mailerSchema= new Schema({
         type: [RecipientSchema]
     },
     _user: {
-        type: Schema.Types.Object.ObjectId, ref: 'User'
+        type: Schema.Types.ObjectId, ref: 'User'
     },
     dateSent: {
         type: Date
@@ -25,4 +25,4 @@ const mailerSchema= new Schema({
 
 });
 
-mongoose.model('mailer', mailerSchema);
+mongoose.model('surveys', surveySchema);

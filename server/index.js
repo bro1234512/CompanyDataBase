@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
-var cors = require("cors")
-var bodyParser = require("body-parser")
+var cors = require("cors");
+var bodyParser = require("body-parser");
 require('./models/User');
-require('./models/Mailer');
+require('./models/Survey');
 require('./models/Car');
 require('./models/Driver');
 require('./services/passport');
@@ -32,9 +32,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 var Users = require('./routes/Users');
 
-app.use('/usersMongo', Users)
+app.use('/usersMongo', Users);
 require('./routes/authRoutes')(app);
-require('./routes/mailerRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if(process.env.NODE_ENV === 'production') {
     // express will serve up production assets

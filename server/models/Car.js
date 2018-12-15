@@ -16,9 +16,6 @@ const CarSchema = new Schema({
     },
     carReviewTerm:{
         type: Date
-    },
-    email:{
-        type: Date
     }
 });
 
