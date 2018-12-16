@@ -22,6 +22,15 @@ class SideBar extends Component{
                             <tr>
                                 <Link to="/cars" className="FormField__Link">Show Cars</Link>
                             </tr>
+                            <tr>
+                                <Link to="/driver" className="FormField__Link">Add Driver</Link>
+                            </tr>
+                            <tr>
+                                <Link to="/drivers" className="FormField__Link">Show Drivers</Link>
+                            </tr>
+                            <tr>
+                                <Link to="/findDriverBy" className="FormField__Link">Show Drivers</Link>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

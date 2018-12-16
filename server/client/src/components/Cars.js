@@ -15,9 +15,7 @@ class Cars extends Component {
 
     componentDidMount(){
             showCars()
-
                 .then(res => this.setState({data: res}))
-
         }
 
 
@@ -27,11 +25,25 @@ class Cars extends Component {
             <div className="FormCenter">
                 <SideBar/>
                 <ul>
+                    <table>
+                        <tr>
+                            <td>RegistrationNumber</td>
+                            <td>mark</td>
+                            <td>model</td>
+                            <td>ageGroup</td>
+                            <td>carReviewTerm</td>
+                        </tr>
+
                     {this.state.data.map(el => (
-                        <li>
-                            {el.mark}: {el.model}
-                        </li>
+                        <tr>
+                            <td>{el.registrationNumber}</td>
+                            <td>{el.mark}</td>
+                            <td>{el.model}</td>
+                            <td>{el.ageGroup}</td>
+                            <td>{el.carReviewTerm}</td>
+                        </tr>
                     ))}
+                    </table>
                 </ul>
 
 

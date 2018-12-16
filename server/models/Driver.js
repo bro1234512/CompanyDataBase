@@ -14,9 +14,6 @@ const DriverSchema = new Schema({
     carLicenseTerm:{
         type: Date
     },
-    password:{
-        type: String
-    },
     email:{
         type: String
     }

@@ -10,6 +10,8 @@ import Profile from './Profile';
 import SideBar from './SideBar'
 import Cars from './Cars'
 import AddCar  from './AddCar'
+import Drivers from './Drivers'
+import AddDriver  from './AddDriver'
 import EmailNew from "./emails/EmailNew";
 import Dashboard from "./Dashboard";
 const DashBoard = () => <h2>DashBoard</h2>
@@ -19,7 +21,7 @@ const DashBoard = () => <h2>DashBoard</h2>
 class App extends Component {
     componentDidMount(){
         this.props.fetchUser();
-        this.props.fetchCars();
+
     }
     render(){
     return(
@@ -32,6 +34,8 @@ class App extends Component {
                     <Route exact path="/sidebar" component={SideBar} />
                     <Route exact path="/cars" component={Cars} />
                     <Route exact path="/car" component={AddCar} />
+                    <Route exact path="/drivers" component={Drivers} />
+                    <Route exact path="/driver" component={AddDriver} />
                     <Route exact path="/login" component={SingInForm} />
                     <Route exact path="/surveys" component={Dashboard} />
                     <Route exact path="/profile" component={Profile} />

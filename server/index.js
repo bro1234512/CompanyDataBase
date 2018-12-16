@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
 var cors = require("cors");
+var morgan = require("morgan")
 var bodyParser = require("body-parser");
 require('./models/User');
 require('./models/Survey');
@@ -32,9 +33,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 var Users = require('./routes/Users');
 var Cars = require('./routes/carRoutes');
+var Drivers = require('./routes/driverRoutes');
 app.use('/car', Cars);
 app.use('/usersMongo', Users)
-
+app.use('/driver',Drivers);
 app.use('/usersMongo', Users);
 require('./routes/authRoutes')(app);
 require('./routes/surveyRoutes')(app);

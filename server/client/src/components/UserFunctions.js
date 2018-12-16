@@ -28,6 +28,21 @@ export const addCar = newCar => {
         })
 }
 
+export const addDriver = newDriver => {
+    return axios
+        .post('driver/addDriverToDatabase', {
+            name: newDriver.name,
+            surname: newDriver.surname,
+            birthdayDate: newDriver.birthdayDate,
+            carLicenseTerm: newDriver.carLicenseTerm,
+            email: newDriver.email
+        })
+        .then(res => {
+            console.log("driver added")
+            return res;
+        })
+}
+
 export const showCars = () => {
     return axios
         .get('car/showCars', {
@@ -38,6 +53,26 @@ export const showCars = () => {
             return res.data;
         })
 }
+export const showDrivers = () => {
+    return axios
+        .get('driver/showDrivers', {
+
+        })
+        .then(res => {
+
+            return res.data;
+        })
+}
+export const findDriver = driver => {
+    return axios
+        .post('driver/findDriver', {
+            surname: driver.surname
+        })
+        .then(res => {
+            return res.data
+        })
+}
+
 export const login = user => {
     return axios
         .post('usersMongo/singin', {

@@ -71,7 +71,7 @@ class AddCar extends Component {
                         <label className="FormField__Label" htmlFor="carReviewTerm">Registration Number</label>
                         <input type="date" id="carReviewTerm" className="FormField__Input" placeholder="Enter carReviewTerm" name="carReviewTerm" value={this.state.carReviewTerm} onChange={this.handleChange} />
                     </div>
-                        <button className="FormField__Button mr-20">Sign Up</button>
+                        <button className="FormField__Button mr-20">Add</button>
 
                 </form>
             </div>
