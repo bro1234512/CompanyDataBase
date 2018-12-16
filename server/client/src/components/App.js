@@ -14,6 +14,7 @@ import Drivers from './Drivers'
 import AddDriver  from './AddDriver'
 import EmailNew from "./emails/EmailNew";
 import Dashboard from "./Dashboard";
+import FindDriver from "./FindDriver"
 const DashBoard = () => <h2>DashBoard</h2>
 
 
@@ -37,6 +38,7 @@ class App extends Component {
                     <Route exact path="/drivers" component={Drivers} />
                     <Route exact path="/driver" component={AddDriver} />
                     <Route exact path="/login" component={SingInForm} />
+                    <Route exact path="/findDriverBySurname" component={FindDriver} />
                     <Route exact path="/surveys" component={Dashboard} />
                     <Route exact path="/profile" component={Profile} />
                     <Route exact path="/emails/new" component={EmailNew} />
