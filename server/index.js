@@ -7,7 +7,6 @@ var cors = require("cors");
 var morgan = require("morgan")
 var bodyParser = require("body-parser");
 require('./models/User');
-require('./models/Survey');
 require('./models/Car');
 require('./models/Driver');
 require('./services/passport');
@@ -39,7 +38,7 @@ app.use('/usersMongo', Users)
 app.use('/driver',Drivers);
 app.use('/usersMongo', Users);
 require('./routes/authRoutes')(app);
-require('./routes/surveyRoutes')(app);
+require('./routes/emailRoutes')(app);
 
 if(process.env.NODE_ENV === 'production') {
     // express will serve up production assets
