@@ -69,7 +69,16 @@ export const findDriver = driver => {
             surname: driver.surname
         })
         .then(res => {
-            console.log(res.data)
+            return res.data
+        })
+}
+
+export const deleteDriver = driver => {
+    return axios
+        .post('driver/deleteDriver', {
+            surname: driver.surname
+        })
+        .then(res => {
             return res.data
         })
 }

@@ -29,7 +29,10 @@ class SideBar extends Component{
                                 <Link to="/drivers" className="FormField__Link">Show Drivers</Link>
                             </tr>
                             <tr>
-                                <Link to="/findDriverBySurname" className="FormField__Link">Find Driver</Link>
+                                <Link to="/findDriverBySurname" className="FormField__Link">Find Driver by surname</Link>
+                            </tr>
+                            <tr>
+                                <Link to="/deleteDriverBySurname" className="FormField__Link">Delete Driver by surname</Link>
                             </tr>
                             </tbody>
                         </table>

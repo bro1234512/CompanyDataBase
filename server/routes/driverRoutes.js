@@ -23,6 +23,26 @@ driver.post('/findDriver', async (req,res) =>{
         })
 });
 
+driver.post('/deleteDriver', async (req,res) =>{
+    await DriverMongo.findOne({
+        surname: req.body.surname})
+        .then(One =>{
+            if(One){
+
+                DriverMongo.deleteOne({
+                    surname: req.body.surname})
+                    .then(driverDeleted => {
+                        res.json({status: driverDeleted.surname + ' deleted!'})
+                    })
+                    .catch(err =>{
+                        res.send('error '+ err)
+                    })
+
+            }else{
+                res.json({error: 'Driver does not exist'})
+            }
+        })
+});
 driver.post('/addDriverToDatabase', (req, res)=>{
     const driverData = {
 

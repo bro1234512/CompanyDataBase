@@ -10,6 +10,7 @@ module.exports = function(app) {
     app.use(proxy('/addDriverToDatabase',{target:'http://localhost:5000'}))
     app.use(proxy('/driver/findDriver',{target:'http://localhost:5000'}))
     app.use(proxy('/driver/showDrivers',{target:'http://localhost:5000'}))
+    app.use(proxy('/driver/deleteDriver',{target:'http://localhost:5000'}))
 
 
 }
