@@ -10,6 +10,8 @@ import Profile from './Profile';
 import SideBar from './SideBar'
 import Cars from './Cars'
 import AddCar  from './AddCar'
+import EmailNew from "./emails/EmailNew";
+import Dashboard from "./Dashboard";
 const DashBoard = () => <h2>DashBoard</h2>
 
 
@@ -31,8 +33,9 @@ class App extends Component {
                     <Route exact path="/cars" component={Cars} />
                     <Route exact path="/car" component={AddCar} />
                     <Route exact path="/login" component={SingInForm} />
-                    <Route exact path="/surveys" component={DashBoard} />
-                     <Route exact path="/profile" component={Profile} />
+                    <Route exact path="/surveys" component={Dashboard} />
+                    <Route exact path="/profile" component={Profile} />
+                    <Route exact path="/emails/new" component={EmailNew} />
                 </div>
             </BrowserRouter>
         </div>
