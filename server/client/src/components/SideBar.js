@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import jwt_decode from 'jwt-decode'
 import {Link} from "react-router-dom";
 
 class SideBar extends Component{
@@ -17,22 +16,25 @@ class SideBar extends Component{
                         <table className="table col-md-6 mx-auto">
                             <tbody>
                             <tr>
-                                <Link to="/car" className="FormField__Link">Add Car</Link>
+                                <Link to="/emails/new" className="FormField__Link">Wyślij Email</Link>
                             </tr>
                             <tr>
-                                <Link to="/cars" className="FormField__Link">Show Cars</Link>
+                                <Link to="/car" className="FormField__Link">Dodaj auto</Link>
                             </tr>
                             <tr>
-                                <Link to="/driver" className="FormField__Link">Add Driver</Link>
+                                <Link to="/cars" className="FormField__Link">Wyświetl dostępne auta</Link>
                             </tr>
                             <tr>
-                                <Link to="/drivers" className="FormField__Link">Show Drivers</Link>
+                                <Link to="/driver" className="FormField__Link">Dodaj kierowce</Link>
                             </tr>
                             <tr>
-                                <Link to="/findDriverBySurname" className="FormField__Link">Find Driver by surname</Link>
+                                <Link to="/drivers" className="FormField__Link">Wyświetl wszystkich kierowców</Link>
                             </tr>
                             <tr>
-                                <Link to="/deleteDriverBySurname" className="FormField__Link">Delete Driver by surname</Link>
+                                <Link to="/findDriverBySurname" className="FormField__Link">Wyświetl kierowce podając nazwisko</Link>
+                            </tr>
+                            <tr>
+                                <Link to="/deleteDriverBySurname" className="FormField__Link">Usuń kierowce podając nazwisko</Link>
                             </tr>
                             </tbody>
                         </table>
