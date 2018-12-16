@@ -7,7 +7,8 @@ import Header from './Header';
 import Landing from './Landing';
 import SingInForm from './SingInForm';
 import Profile from './Profile';
-const DashBoard = () => <h2>DashBoard</h2>
+import EmailNew from "./emails/EmailNew";
+import Dashboard from "./Dashboard";
 
 
 
@@ -24,8 +25,9 @@ class App extends Component {
                     <Route exact path="/" component={Landing} />
                     <Route exact path="/register" component={SingUpForm} />
                     <Route exact path="/login" component={SingInForm} />
-                    <Route exact path="/surveys" component={DashBoard} />
-                     <Route exact path="/profile" component={Profile} />
+                    <Route exact path="/surveys" component={Dashboard} />
+                    <Route exact path="/profile" component={Profile} />
+                    <Route exact path="/emails/new" component={EmailNew} />
                 </div>
             </BrowserRouter>
         </div>
