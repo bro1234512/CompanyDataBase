@@ -3,7 +3,7 @@ const car = express.Router();
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-
+const { MongoClient } = require('mongodb');
 const CarMongo = require('../models/Car');
 
 car.use(cors());
@@ -16,13 +16,33 @@ car.get('/showCars', async (req,res)=>{
 });
 
 car.post('/findCar', async (req,res) =>{
-    await DriverMongo.findOne({
+    await CarMongo.findOne({
         registrationNumber: req.body.registrationNumber})
         .then(One =>{
             res.json(One);
         })
 });
 
+car.post('/deleteCar', async (req,res) =>{
+    await CarMongo.findOne({
+        registrationNumber: req.body.registrationNumber})
+        .then(One =>{
+            if(One){
+
+                CarMongo.deleteOne({
+                    registrationNumber: req.body.registrationNumber})
+                    .then(carDeleted => {
+                        res.json({status: carDeleted.registrationNumber + ' usunięto!'})
+                    })
+                    .catch(err =>{
+                        res.send('error '+ err)
+                    })
+
+            }else{
+                res.json({error: 'Auto usunięte!!'})
+            }
+        })
+});
 
 car.post('/addCarToDatabase', (req, res)=>{
     const carData = {

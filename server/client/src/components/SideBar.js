@@ -28,6 +28,9 @@ class SideBar extends Component{
                                 <Link to="/findCarByRegistration" className="FormField__Link">Wyświetl auto podając numer rejestracyjny</Link>
                             </tr>
                             <tr>
+                                <Link to="/deleteCarByRegistration" className="FormField__Link">Usuń auto podając numer rejestracyjny</Link>
+                            </tr>
+                            <tr>
                                 <Link to="/driver" className="FormField__Link">Dodaj kierowce</Link>
                             </tr>
                             <tr>

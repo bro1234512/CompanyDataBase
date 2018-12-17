@@ -91,6 +91,15 @@ export const deleteDriver = driver => {
             return res.data
         })
 }
+export const deleteCar = car => {
+    return axios
+        .post('car/deleteCar', {
+            registrationNumber: car.registrationNumber
+        })
+        .then(res => {
+            return res.data
+        })
+}
 
 export const login = user => {
     return axios

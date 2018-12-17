@@ -17,7 +17,7 @@ import EmailNew from "./emails/EmailNew";
 import Dashboard from "./Dashboard";
 import FindDriver from "./FindDriver"
 import DeleteDriver from "./DeleteDriver"
-
+import DeleteCar from "./DeleteCar"
 
 
 
@@ -38,6 +38,7 @@ class App extends Component {
                     <Route exact path="/cars" component={Cars} />
                     <Route exact path="/car" component={AddCar} />
                     <Route exact path="/findCarByRegistration" component={FindCar} />
+                    <Route exact path="/deleteCarByRegistration" component={DeleteCar} />
                     <Route exact path="/deleteDriverBySurname" component={DeleteDriver} />
                     <Route exact path="/drivers" component={Drivers} />
                     <Route exact path="/driver" component={AddDriver} />
