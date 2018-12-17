@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="578a58b2-4d6f-4074-b588-cbebe0852d7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/client/src/components/DeleteCar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/client/src/components/DeleteCar.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/components/DeleteCar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/client/src/components/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/components/Landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/client/src/components/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/components/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/client/src/components/UserFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/components/UserFunctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/carRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/carRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,18 +30,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="6" />
+          <entry key="gitignore" value="8" />
           <entry key="html" value="3" />
-          <entry key="js" value="366" />
+          <entry key="js" value="372" />
           <entry key="json" value="28" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="3" />
           <entry key="JSON" value="28" />
-          <entry key="JavaScript" value="341" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="JavaScript" value="347" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -54,6 +51,7 @@
           <entry key="gitignore" value="25" />
           <entry key="js" value="6044" />
           <entry key="json" value="226" />
+          <entry key="md" value="35" />
           <entry key="txt" value="39" />
         </counts>
       </usages-collector>
@@ -62,6 +60,7 @@
           <entry key="HTML" value="4" />
           <entry key="JSON" value="226" />
           <entry key="JavaScript" value="5864" />
+          <entry key="Markdown" value="35" />
           <entry key="PLAIN_TEXT" value="240" />
         </counts>
       </usages-collector>
@@ -121,63 +120,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/setupProxy.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/components/FindCar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1628">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/components/FindDriver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/components/AddDriver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/Car.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/components/SideBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/driverRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -186,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/client/src/components/UserFunctions.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
@@ -196,10 +138,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/Driver.js">
+        <entry file="file://$PROJECT_DIR$/server/routes/emailRoutes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/components/SingInForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="910">
+              <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/components/SingUpForm.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="37" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/UserMongo.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -240,8 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/client/src/components/emails/SurvayField.js" />
-        <option value="$PROJECT_DIR$/server/client/src/components/emails/SurvayForm.js" />
         <option value="$PROJECT_DIR$/server/client/src/components/emails/SurvayFormReview.js" />
         <option value="$PROJECT_DIR$/server/client/src/components/emails/SurvayList.js" />
         <option value="$PROJECT_DIR$/server/client/src/components/emails/SurveyNew.js" />
@@ -291,6 +265,8 @@
         <option value="$PROJECT_DIR$/server/routes/carRoutes.js" />
         <option value="$PROJECT_DIR$/server/client/src/components/FindCar.js" />
         <option value="$PROJECT_DIR$/server/client/src/components/UserFunctions.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/server/.gitignore" />
       </list>
     </option>
   </component>
@@ -362,13 +338,8 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CompanyDateBase" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompanyDateBase" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CompanyDateBase" type="b2602c69:ProjectViewProjectNode" />
@@ -458,7 +429,7 @@
       <workItem from="1545006382886" duration="9710000" />
       <workItem from="1545046660504" duration="382000" />
       <workItem from="1545062477433" duration="330000" />
-      <workItem from="1545067180649" duration="1730000" />
+      <workItem from="1545067180649" duration="4099000" />
     </task>
     <task id="LOCAL-00001" summary="Create project structure">
       <created>1544408747911</created>
@@ -555,7 +526,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131226000" />
+    <option name="totallyTimeSpent" value="133595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,9 +539,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21443625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21443625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -584,7 +554,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4985119" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.32886904" side_tool="true" weight="0.2262295" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.75744045" visible="true" weight="0.2753304" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.75744045" visible="true" weight="0.2753304" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -635,41 +605,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="delete driver by surname added" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="17116" column="12" selection-start-line="17116" selection-start-column="12" selection-end-line="17116" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/reducers/carsReducer.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/components/emails/Drivers.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/components/SingInForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="52" lean-forward="true" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/Users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/components/Cars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/client/src/utils/validateEmails.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -735,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/emailRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -957,6 +885,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="72" column="10" lean-forward="true" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/emailRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/components/SingInForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/components/SingUpForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/User.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/UserMongo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
