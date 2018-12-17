@@ -7,7 +7,7 @@ class SideBar extends Component{
 
     }
     renderContent() {
-        if(localStorage.getItem('usertoken') != null ) {
+        //if(localStorage.getItem('usertoken') != null ) {
 
 
             return(
@@ -23,6 +23,9 @@ class SideBar extends Component{
                             </tr>
                             <tr>
                                 <Link to="/cars" className="FormField__Link">Wyświetl dostępne auta</Link>
+                            </tr>
+                            <tr>
+                                <Link to="/findCarByRegistration" className="FormField__Link">Wyświetl auto podając numer rejestracyjny</Link>
                             </tr>
                             <tr>
                                 <Link to="/driver" className="FormField__Link">Dodaj kierowce</Link>
@@ -42,7 +45,7 @@ class SideBar extends Component{
 
 
             )
-        }
+       // }
 
     }
 

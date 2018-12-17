@@ -7,6 +7,7 @@ var cors = require("cors");
 var morgan = require("morgan")
 var bodyParser = require("body-parser");
 require('./models/User');
+require('./models/Email');
 require('./models/Car');
 require('./models/Driver');
 require('./services/passport');
@@ -34,7 +35,7 @@ var Users = require('./routes/Users');
 var Cars = require('./routes/carRoutes');
 var Drivers = require('./routes/driverRoutes');
 app.use('/car', Cars);
-app.use('/usersMongo', Users)
+
 app.use('/driver',Drivers);
 app.use('/usersMongo', Users);
 require('./routes/authRoutes')(app);
@@ -51,7 +52,7 @@ if(process.env.NODE_ENV === 'production') {
 
     const path = require('path');
     app.get('*',(req, res)=>{
-       res.sendFile((path.resolve(__dirname,'client', 'build', 'index.html')));
+        res.sendFile((path.resolve(__dirname,'client', 'build', 'index.html')));
     });
 }
 

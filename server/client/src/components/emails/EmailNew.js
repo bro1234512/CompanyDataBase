@@ -1,4 +1,4 @@
-// EmailNew shows EmailForm and EmailFormReview
+// EmailNew shows SurveyForm and SurveyFormReview
 import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import EmailForm from './EmailForm';

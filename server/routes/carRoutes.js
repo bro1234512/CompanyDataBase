@@ -15,6 +15,15 @@ car.get('/showCars', async (req,res)=>{
     })
 });
 
+car.post('/findCar', async (req,res) =>{
+    await DriverMongo.findOne({
+        registrationNumber: req.body.registrationNumber})
+        .then(One =>{
+            res.json(One);
+        })
+});
+
+
 car.post('/addCarToDatabase', (req, res)=>{
     const carData = {
 

@@ -6,7 +6,7 @@ import formFields from './formFields';
 import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
 
-const EmailFormReview = ({ onCancel, formValues, submitEmail, history }) => {
+const EmailFormReview = ({ onCancel, formValues, submitEmail}) => {
     const reviewFields = _.map(formFields, ({ name, label }) => {
         return (
             <div key={name}>
@@ -29,7 +29,7 @@ const EmailFormReview = ({ onCancel, formValues, submitEmail, history }) => {
                 Wróć
             </button>
             <button
-                onClick={() => submitEmail(formValues, history)}
+                onClick={() => submitEmail(formValues)}
                 className="green btn-flat right white-text"
             >
                 Wyślij Email

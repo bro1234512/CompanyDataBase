@@ -27,7 +27,7 @@ class EmailForm extends Component {
             <div>
                 <form onSubmit={this.props.handleSubmit(this.props.onEmailSubmit)}>
                     {this.renderFields()}
-                    <Link to="/sidebar" className="red btn-flat white-text">
+                    <Link to="/surveys" className="red btn-flat white-text">
                         Anuluj
                     </Link>
                     <button type="submit" className="teal btn-flat right white-text">

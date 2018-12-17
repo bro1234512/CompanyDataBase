@@ -27,4 +27,3 @@ app.get('/api/current_user', (req,res)=>{
     });
 };
 
-

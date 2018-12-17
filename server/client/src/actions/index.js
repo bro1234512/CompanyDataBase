@@ -8,13 +8,13 @@ export const fetchUser = () => async dispatch => {
 };
 
 export const submitEmail = (values) => async dispatch => {
-    const res = await axios.post('/api/surveys', values);
+    const res = await axios.post('/api/emails', values);
 
 
     dispatch({ type: FETCH_USER, payload: res.data });
 };
 export const fetchEmails = () => async dispatch => {
-       const res = await axios.get('/api/emails');
+    const res = await axios.get('/api/emails');
 
     dispatch({ type: FETCH_EMAILS, payload: res.data });
 };

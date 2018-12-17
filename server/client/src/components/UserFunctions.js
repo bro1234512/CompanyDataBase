@@ -73,6 +73,15 @@ export const findDriver = driver => {
         })
 }
 
+export const findCar = car => {
+    return axios
+        .post('driver/findCar', {
+            registrationNumber: car.registrationNumber
+        })
+        .then(res => {
+            return res.data
+        })
+}
 export const deleteDriver = driver => {
     return axios
         .post('driver/deleteDriver', {
