@@ -44,7 +44,7 @@ class FindDriver extends Component {
                 <form onSubmit={this.handleSubmit} className="FormFields" >
                     <div className="FormField">
                         <label className="FormField__Label" htmlFor="surname">Surname</label>
-                        <input type="surname" id="surname" className="FormField__Input" placeholder="Enter driver's surname" name="surname" value={this.state.surname} onChange={this.handleChange} />
+                        <input type="surname" id="surname" className="FormField__Input" placeholder="Podaj nazwisko" name="surname" value={this.state.surname} onChange={this.handleChange} />
                     </div>
                     <div className="FormField">
                         <button  className="FormField__Button mr-20">Find</button>

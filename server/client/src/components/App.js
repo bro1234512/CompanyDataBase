@@ -14,7 +14,6 @@ import FindCar from "./FindCar"
 import Drivers from './Drivers'
 import AddDriver  from './AddDriver'
 import EmailNew from "./emails/EmailNew";
-import Dashboard from "./Dashboard";
 import FindDriver from "./FindDriver"
 import DeleteDriver from "./DeleteDriver"
 import DeleteCar from "./DeleteCar"
@@ -34,7 +33,7 @@ class App extends Component {
                     <Header/>
                     <Route exact path="/" component={Landing} />
                     <Route exact path="/register" component={SingUpForm} />
-                    <Route exact path="/surveys" component={SideBar} />
+                    <Route exact path="/mainpage" component={SideBar} />
                     <Route exact path="/cars" component={Cars} />
                     <Route exact path="/car" component={AddCar} />
                     <Route exact path="/findCarByRegistration" component={FindCar} />
@@ -44,7 +43,6 @@ class App extends Component {
                     <Route exact path="/driver" component={AddDriver} />
                     <Route exact path="/login" component={SingInForm} />
                     <Route exact path="/findDriverBySurname" component={FindDriver} />
-                    <Route exact path="/cos" component={Dashboard} />
                     <Route exact path="/profile" component={Profile} />
                     <Route exact path="/emails/new" component={EmailNew} />
                 </div>

@@ -31,7 +31,7 @@ class SignInForm extends Component {
 
         login(user).then(res => {
             if(res){
-                this.props.history.push(`/surveys`)
+                this.props.history.push(`/mainpage`)
             }
         })
 
@@ -43,12 +43,12 @@ class SignInForm extends Component {
                 <form onSubmit={this.handleSubmit} className="FormFields" >
                     <div className="FormField">
                         <label className="FormField__Label" htmlFor="email">E-Mail Address</label>
-                        <input type="email" id="email" className="FormField__Input" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
+                        <input type="email" id="email" className="FormField__Input" placeholder="Podaj email" name="email" value={this.state.email} onChange={this.handleChange} />
                     </div>
 
                     <div className="FormField">
                         <label className="FormField__Label" htmlFor="password">Password</label>
-                        <input type="password" id="password" className="FormField__Input" placeholder="Enter your password" name="password" value={this.state.password} onChange={this.handleChange} />
+                        <input type="password" id="password" className="FormField__Input" placeholder="Podaj hasło" name="password" value={this.state.password} onChange={this.handleChange} />
                     </div>
 
                     <div className="FormField">

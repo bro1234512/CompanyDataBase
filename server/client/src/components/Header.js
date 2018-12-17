@@ -33,10 +33,10 @@ class Header extends Component{
             <nav>
                 <div className=" blue  nav-wrapper">
                     <Link
-                        to={this.props.auth ? '/surveys' : '/'}
+                        to={this.props.auth ? '/mainpage' : '/'}
                         className="left brand-logo"
                     >
-                        Company Datebsase
+                        Company Datebase
                     </Link>
 
                     <ul className="right">

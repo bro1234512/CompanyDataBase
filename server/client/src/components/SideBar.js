@@ -7,7 +7,7 @@ class SideBar extends Component{
 
     }
     renderContent() {
-        //if(localStorage.getItem('usertoken') != null ) {
+
 
 
             return(
@@ -40,13 +40,16 @@ class SideBar extends Component{
                             <a>
                                 <Link to="/deleteDriverBySurname" className="collection-item">Usuń kierowce podając nazwisko</Link>
                             </a>
+                            <a>
+                                <Link to="/profile" className="collection-item">Wyświetl dane osoby zalogowanej</Link>
+                            </a>
 
 
                     </div>
 
 
             )
-       // }
+
 
     }
 
