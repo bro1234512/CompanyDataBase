@@ -11,39 +11,37 @@ class SideBar extends Component{
 
 
             return(
-               <div className="jumbotron mt-5" align="left">
+               <div className="collection center" width='300' >
+                            <a>
+                                <Link to="/emails/new" className="collection-item">Wyślij Email</Link>
+                            </a>
+                            <a>
+                                <Link to="/car" className="collection-item">Dodaj auto</Link>
+                            </a>
+                            <a>
+                                <Link to="/cars" className="collection-item">Wyświetl dostępne auta</Link>
+                            </a>
+                            <a>
+                                <Link to="/findCarByRegistration" className="collection-item">Wyświetl auto podając numer rejestracyjny</Link>
+                            </a>
+                            <a>
+                                <Link to="/deleteCarByRegistration" className="collection-item">Usuń auto podając numer rejestracyjny</Link>
+                            </a>
+                            <a>
+                                <Link to="/driver" className="collection-item">Dodaj kierowce</Link>
+                            </a>
+                            <a>
+                                <Link to="/drivers" className="collection-item">Wyświetl wszystkich kierowców</Link>
+                            </a>
+                            <a>
+                                <Link to="/findDriverBySurname" className="collection-item">Wyświetl kierowce podając nazwisko</Link>
+                            </a>
 
-                        <table className="table col-md-6 mx-auto">
-                            <tbody>
-                            <tr>
-                                <Link to="/emails/new" className="FormField__Link">Wyślij Email</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/car" className="FormField__Link">Dodaj auto</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/cars" className="FormField__Link">Wyświetl dostępne auta</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/findCarByRegistration" className="FormField__Link">Wyświetl auto podając numer rejestracyjny</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/deleteCarByRegistration" className="FormField__Link">Usuń auto podając numer rejestracyjny</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/driver" className="FormField__Link">Dodaj kierowce</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/drivers" className="FormField__Link">Wyświetl wszystkich kierowców</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/findDriverBySurname" className="FormField__Link">Wyświetl kierowce podając nazwisko</Link>
-                            </tr>
-                            <tr>
-                                <Link to="/deleteDriverBySurname" className="FormField__Link">Usuń kierowce podając nazwisko</Link>
-                            </tr>
-                            </tbody>
-                        </table>
+                            <a>
+                                <Link to="/deleteDriverBySurname" className="collection-item">Usuń kierowce podając nazwisko</Link>
+                            </a>
+
+
                     </div>
 
 
