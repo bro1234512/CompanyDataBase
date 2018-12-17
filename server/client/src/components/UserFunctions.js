@@ -75,7 +75,7 @@ export const findDriver = driver => {
 
 export const findCar = car => {
     return axios
-        .post('driver/findCar', {
+        .post('car/findCar', {
             registrationNumber: car.registrationNumber
         })
         .then(res => {
