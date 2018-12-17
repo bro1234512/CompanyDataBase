@@ -3,11 +3,25 @@ const usersMongo = express.Router();
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-
+const passport = require('passport');
 const UserMongo = require('../models/UserMongo');
+
 
 usersMongo.use(cors());
 process.env.SECRET_KEY = 'secret';
+
+
+
+
+
+usersMongo.post('/singin', passport.authenticate('local-login' , {
+    failureRedirect : '/login'
+}), (req,res)=>{
+
+    res.send(req.user);
+});
+
+
 
 usersMongo.post('/singup', (req, res)=>{
     const userData = {
@@ -39,33 +53,6 @@ usersMongo.post('/singup', (req, res)=>{
         })
 })
 
-usersMongo.post('/singin', (req,res)=>{
-    UserMongo.findOne({
-        email: req.body.email
-    })
-        .then(user => {
-            if(user){
-                if(bcrypt.compareSync(req.body.password, user.password)){
-                    const payload = {
-                        _id: user._id,
-                        name: user.name,
-                        email: user.email
-                    }
-                    let token = jwt.sign(payload, process.env.SECRET_KEY,{
-                        expiresIn: 1440
-                    })
-                    res.send(token)
-                }else{
-                    res.json({error: "Uzytkownik nie istnieje"})
-                }
-            }else{
-                res.json({error: "Uzytkownik nie istnieje"})
-            }
-        })
-        .catch(err =>{
-            res.send('error: ' +err)
-        })
-})
 
 usersMongo.get('/profile', (req, res) => {
     var decoded = jwt.verify(req.headers['authorization'],process.env.SECRET_KEY)
@@ -85,5 +72,6 @@ usersMongo.get('/profile', (req, res) => {
             res.send('error: '+ err)
         })
 })
+
 
 module.exports = usersMongo;

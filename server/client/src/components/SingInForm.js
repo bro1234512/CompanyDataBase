@@ -31,7 +31,7 @@ class SignInForm extends Component {
 
         login(user).then(res => {
             if(res){
-                this.props.history.push(`/sidebar`)
+                this.props.history.push(`/surveys`)
             }
         })
 

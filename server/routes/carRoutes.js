@@ -3,19 +3,20 @@ const car = express.Router();
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const requireLogin = require('../middlewares/requireLogin');
 const { MongoClient } = require('mongodb');
 const CarMongo = require('../models/Car');
 
 car.use(cors());
 process.env.SECRET_KEY = 'secret';
 
-car.get('/showCars', async (req,res)=>{
+car.get('/showCars',requireLogin, async (req,res)=>{
      await CarMongo.find({}).then(eachOne => {
         res.json(eachOne);
     })
 });
 
-car.post('/findCar', async (req,res) =>{
+car.post('/findCar',requireLogin, async (req,res) =>{
     await CarMongo.findOne({
         registrationNumber: req.body.registrationNumber})
         .then(One =>{
@@ -24,7 +25,7 @@ car.post('/findCar', async (req,res) =>{
         })
 });
 
-car.post('/deleteCar', async (req,res) =>{
+car.post('/deleteCar',requireLogin, async (req,res) =>{
     await CarMongo.findOne({
         registrationNumber: req.body.registrationNumber})
         .then(One =>{
@@ -45,7 +46,7 @@ car.post('/deleteCar', async (req,res) =>{
         })
 });
 
-car.post('/addCarToDatabase', (req, res)=>{
+car.post('/addCarToDatabase',requireLogin, (req, res)=>{
     const carData = {
 
         registrationNumber: req.body.registrationNumber,

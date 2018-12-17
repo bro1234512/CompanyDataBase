@@ -2,6 +2,7 @@ const express = require('express');
 const driver = express.Router();
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
+const requireLogin = require('../middlewares/requireLogin');
 const bcrypt = require('bcryptjs');
 
 const DriverMongo = require('../models/Driver');
@@ -9,13 +10,13 @@ const DriverMongo = require('../models/Driver');
 driver.use(cors());
 process.env.SECRET_KEY = 'secret';
 
-driver.get('/showDrivers', async (req,res)=>{
+driver.get('/showDrivers',requireLogin, async (req,res)=>{
     await DriverMongo.find({}).then(eachOne => {
         res.json(eachOne);
     })
 });
 
-driver.post('/findDriver', async (req,res) =>{
+driver.post('/findDriver',requireLogin, async (req,res) =>{
     await DriverMongo.findOne({
         surname: req.body.surname})
         .then(One =>{
@@ -23,7 +24,7 @@ driver.post('/findDriver', async (req,res) =>{
         })
 });
 
-driver.post('/deleteDriver', async (req,res) =>{
+driver.post('/deleteDriver',requireLogin, async (req,res) =>{
     await DriverMongo.findOne({
         surname: req.body.surname})
         .then(One =>{
@@ -43,7 +44,7 @@ driver.post('/deleteDriver', async (req,res) =>{
             }
         })
 });
-driver.post('/addDriverToDatabase', (req, res)=>{
+driver.post('/addDriverToDatabase',requireLogin, (req, res)=>{
     const driverData = {
 
         name: req.body.name,

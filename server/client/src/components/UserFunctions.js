@@ -108,10 +108,8 @@ export const login = user => {
             password: user.password
         })
         .then(res => {
-           localStorage.setItem('usertoken',res.data)
+
             return res.data
         })
 }
-export const logChange = log => {
-    return localStorage.removeItem('usertoken');
-}
+
