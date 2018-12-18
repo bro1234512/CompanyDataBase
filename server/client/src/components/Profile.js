@@ -1,20 +1,19 @@
 import React, {Component} from 'react'
 import jwt_decode from 'jwt-decode'
+import {viewProfile} from "./UserFunctions";
 
 class Profile extends Component{
     constructor(){
         super()
         this.state ={
-           name: '',
-           email: ''
+           data: []
         }
     }
     componentDidMount(){
-        const token = localStorage.usertoken;
-        const decoded = jwt_decode(token)
-        this.setState({
-            name: decoded.name,
-            email: decoded.email
+
+        viewProfile().then(res => {
+
+            this.setState({data: res})
         })
     }
 
@@ -29,11 +28,11 @@ class Profile extends Component{
                         <tbody>
                         <tr>
                             <td>Name</td>
-                            <td>{this.state.name}</td>
+                            <td>{this.state.data.name}</td>
                         </tr>
                         <tr>
                             <td>Email</td>
-                            <td>{this.state.email}</td>
+                            <td>{this.state.data.email}</td>
                         </tr>
                         </tbody>
                     </table>

@@ -54,7 +54,7 @@ class FindCar extends Component {
 
                             <table>
                                 <tr>
-                                    <td>Numer rejestracyjny</td>
+                                    <td>Numer Rejestracyjny</td>
                                     <td>Marka</td>
                                     <td>Model</td>
                                     <td>Rocznik</td>

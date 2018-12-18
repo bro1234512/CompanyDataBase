@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const UserMongo = require('../models/UserMongo');
+const requireLogin = require('../middlewares/requireLogin');
 
 
 usersMongo.use(cors());
@@ -54,11 +55,11 @@ usersMongo.post('/singup', (req, res)=>{
 })
 
 
-usersMongo.get('/profile', (req, res) => {
-    var decoded = jwt.verify(req.headers['authorization'],process.env.SECRET_KEY)
+usersMongo.get('/profile',requireLogin, (req, res) => {
+
 
     UserMongo.findOne({
-        _id:decoded._id
+        _id: req.user._id
     })
         .then(user => {
             if(user){

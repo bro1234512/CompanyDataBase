@@ -82,6 +82,16 @@ export const findCar = car => {
             return res.data
         })
 }
+
+export const viewProfile = profile => {
+    return axios
+        .get('usersMongo/profile', {
+
+        })
+        .then(res => {
+            return res.data
+        })
+}
 export const deleteDriver = driver => {
     return axios
         .post('driver/deleteDriver', {
