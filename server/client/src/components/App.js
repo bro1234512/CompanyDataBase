@@ -17,9 +17,11 @@ import EmailNew from "./emails/EmailNew";
 import FindDriver from "./FindDriver"
 import DeleteDriver from "./DeleteDriver"
 import DeleteCar from "./DeleteCar"
-
-
-
+import DriverToCar from "./DriverToCar"
+import DriverToCars from "./DriverCars"
+import CalculateSalary from "./CalculateSalary"
+import Rate from "./Rate"
+import Rates from "./Rates"
 class App extends Component {
     componentDidMount(){
         this.props.fetchUser();
@@ -45,6 +47,12 @@ class App extends Component {
                     <Route exact path="/findDriverBySurname" component={FindDriver} />
                     <Route exact path="/profile" component={Profile} />
                     <Route exact path="/emails/new" component={EmailNew} />
+                    <Route exact path="/driverToCar" component={DriverToCar} />
+                    <Route exact path="/driverToCars" component={DriverToCars} />
+                    <Route exact path="/calculatesalary" component={CalculateSalary} />
+                    <Route exact path="/rating" component={Rate} />
+                    <Route exact path="/ratings" component={Rates} />
+
                 </div>
             </BrowserRouter>
         </div>

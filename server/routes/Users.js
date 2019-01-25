@@ -29,14 +29,14 @@ usersMongo.post('/singup', (req, res)=>{
         name: req.body.name,
         email: req.body.email,
         password: req.body.password
-    }
+    };
     UserMongo.findOne({
         email:req.body.email
     })
         .then(user => {
             if(!user){
                 bcrypt.hash(req.body.password, 10, (err, hash) => {
-                    userData.password = hash
+                    userData.password = hash;
                     UserMongo.create(userData)
                         .then(user => {
                             res.json({status: user.email + ' registered!'})
@@ -52,7 +52,7 @@ usersMongo.post('/singup', (req, res)=>{
         .catch(err => {
             res.send('error: ' + err)
         })
-})
+});
 
 
 usersMongo.get('/profile',requireLogin, (req, res) => {
@@ -72,7 +72,15 @@ usersMongo.get('/profile',requireLogin, (req, res) => {
         .catch(err => {
             res.send('error: '+ err)
         })
-})
+});
+
+usersMongo.post('./salarycounter', requireLogin, (req, res)=>{
+    const salary = {
+        hours : req.body.hours,
+        yearsOfWorking : req.body.yearsOfWorking
+};
+
+});
 
 
 module.exports = usersMongo;

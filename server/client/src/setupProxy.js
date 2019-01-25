@@ -14,6 +14,9 @@ module.exports = function(app) {
     app.use(proxy('/driver/findDriver',{target:'http://localhost:5000'}))
     app.use(proxy('/driver/showDrivers',{target:'http://localhost:5000'}))
     app.use(proxy('/driver/deleteDriver',{target:'http://localhost:5000'}))
-
-
+    app.use(proxy('/driver/showDriversCars',{target:'http://localhost:5000'}))
+    app.use(proxy('/driver/driverToCar',{target:'http://localhost:5000'}))
+    app.use(proxy('/salarycounter',{target:'http://localhost:5000'}))
+    app.use(proxy('/rating',{target:'http://localhost:5000'}))
+    app.use(proxy('/ratings',{target:'http://localhost:5000'}))
 }

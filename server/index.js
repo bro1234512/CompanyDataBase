@@ -34,9 +34,11 @@ app.use(passport.session());
 var Users = require('./routes/Users');
 var Cars = require('./routes/carRoutes');
 var Drivers = require('./routes/driverRoutes');
+var Ratings = require('./routes/ratingRoutes');
 app.use('/car', Cars);
 
 app.use('/driver',Drivers);
+app.use('/rate',Ratings);
 app.use('/usersMongo', Users);
 require('./routes/authRoutes')(app);
 require('./routes/emailRoutes')(app);

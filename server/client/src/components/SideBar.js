@@ -43,6 +43,16 @@ class SideBar extends Component{
                             <a>
                                 <Link to="/profile" className="collection-item">Wyświetl dane osoby zalogowanej</Link>
                             </a>
+                            <a>
+                                <Link to="/driverToCar" className="collection-item">Przypisz kierwoce do samochodu</Link>
+                                 </a>
+                   <a>
+                       <Link to="/calculatesalary" className="collection-item">Oblicz wyplate</Link>
+                   </a>
+
+                   <a>
+                       <Link to="/rating" className="collection-item">Wystaw ocene</Link>
+                   </a>
 
 
                     </div>

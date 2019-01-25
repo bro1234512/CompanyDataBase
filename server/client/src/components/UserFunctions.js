@@ -63,6 +63,17 @@ export const showDrivers = () => {
             return res.data;
         })
 }
+
+export const showRates = () => {
+    return axios
+        .get('rate/showRate', {
+
+        })
+        .then(res => {
+
+            return res.data;
+        })
+}
 export const findDriver = driver => {
     return axios
         .post('driver/findDriver', {
@@ -108,6 +119,44 @@ export const deleteCar = car => {
         })
         .then(res => {
             return res.data
+        })
+}
+
+export const driverCar = driverToCar => {
+    return axios
+        .post('driver/driverToCar', {
+            email:driverToCar.email,
+            registrationNumber: driverToCar.registrationNumber
+        })
+        .then(res => {
+            return res.data
+        })
+}
+
+export const showDriverCars = () => {
+    return axios
+        .get('driver/showDriversCars', {
+
+        })
+        .then(res => {
+
+            return res.data;
+        })
+}
+export const calculateSalary = salary => {
+    return salary.hours * 20 + salary.yearsOfWorking * 500;
+
+}
+
+export const addRate = newRate => {
+    return axios
+        .post('rate/ratings', {
+            rate: newRate.rate
+
+        })
+        .then(res => {
+            console.log("rating added")
+            return res;
         })
 }
 

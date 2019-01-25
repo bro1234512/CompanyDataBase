@@ -18,7 +18,7 @@ module.exports = app =>{
             dateSent: Date.now()
         });
 
-        // Sending mail
+        // Sending email
         const mailer = new Mailer(email, emailTemplate(email));
         try {
             await mailer.send();
